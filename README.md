@@ -26,8 +26,8 @@ class DockerApi
   end
   
   def self.run_ruby_command(container, command)
-    container.store_file("/test_ruby_command", "exec(\"echo '#{command}' | rails c\" )")
-    container.exec(["ruby", '/test_ruby_command'])
+    container.store_file("/ruby_command", "exec(\"echo '#{command}' | rails c\" )")
+    container.exec(["ruby", '/ruby_command'])
   end  
 end
 ```
