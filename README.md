@@ -35,6 +35,7 @@ end
 
 Example usage
 ```ruby
+DockerApi.connect_to_docker
 container = DockerApi.docker_containers[0]
 DockerApi.run_ruby_command(container, 'puts User.count')
 ```
