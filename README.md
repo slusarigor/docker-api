@@ -1,6 +1,6 @@
 # docker-api
 
- 
+- Require gem 'docker-api' 
 
 
 ```ruby
